@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
-    <meta charset="UTF-8" />
+    <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Smile School</title>
+    <title>ALU Smiling School</title>
     <meta name="description" content="Implementing a design with Bootstrap" />
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
     <link rel="icon" href="images/favicon.png" type="image/png" />
@@ -46,6 +46,7 @@
       src="https://kit.fontawesome.com/9b597d4a7c.js"
       crossorigin="anonymous"
     ></script>
+    <script defer src="scripts.js"></script>
   </head>
   <body>
     <!-- Header -->
@@ -78,10 +79,10 @@
         >
           <ul class="navbar-nav text-uppercase font-weight-bold">
             <li class="nav-item">
-              <a href="courses.html" class="nav-link text-light">Courses</a>
+              <a href="#" class="nav-link text-light">Courses</a>
             </li>
             <li class="nav-item">
-              <a href="pricing.html" class="nav-link text-light">Pricing</a>
+              <a href="#" class="nav-link text-light">Prices</a>
             </li>
             <li class="nav-item">
               <a href="#" class="nav-link text-light">Login</a>
@@ -112,7 +113,7 @@
             <img
               src="./images/profile_1.jpg"
               class="card-img-top rounded-circle"
-              alt="profile male"
+              alt="..."
             />
             <div class="card-body pl-0 pr-0">
               <h5 class="card-title font-weight-bold">Phillip Massey</h5>
@@ -126,7 +127,7 @@
             <img
               src="./images/profile_2.jpg"
               class="card-img-top rounded-circle"
-              alt="profile female"
+              alt="..."
             />
             <div class="card-body pl-0 pr-0">
               <h5 class="card-title font-weight-bold">Nan Lawrence</h5>
@@ -140,7 +141,7 @@
             <img
               src="./images/profile_3.jpg"
               class="card-img-top rounded-circle"
-              alt="profile male"
+              alt="..."
             />
             <div class="card-body pl-0 pr-0">
               <h5 class="card-title font-weight-bold">Bruce Walters</h5>
@@ -154,7 +155,7 @@
             <img
               src="./images/profile_4.jpg"
               class="card-img-top rounded-circle"
-              alt="profile male"
+              alt="..."
             />
             <div class="card-body pl-0 pr-0">
               <h5 class="card-title font-weight-bold">Henry Hughes</h5>
@@ -201,6 +202,7 @@
             </div>
           </div>
         </div>
+        <div class="loader"></div>
         <div class="carousel-item background-primary text-light">
           <div class="container pt-5 pb-5">
             <div class="card mb-3 mt-3 background-primary border-0">
@@ -213,7 +215,7 @@
                     width="150"
                   />
                 </div>
-                <div class="col-md-9">
+                <div id="quotes" class="col-md-9">
                   <div class="card-body">
                     <p class="card-text">
                       &raquo; Those tutorials are concise and go straight to the
@@ -250,6 +252,7 @@
     </div>
     <!-- Popular -->
     <section class="popular">
+      <div class="loader"></div>
       <div class="container text-center">
         <h2 class="mt-5 mb-5 font-weight-light">
           Most
@@ -257,7 +260,7 @@
         </h2>
       </div>
       <div id="carouselControls" class="carousel slide" data-ride="carousel">
-        <div class="carousel-inner">
+        <div id="popularContainer" class="carousel-inner">
           <div class="carousel-item active">
             <div class="container pt-5 pb-5">
               <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4">
@@ -266,13 +269,13 @@
                     <img
                       src="./images/thumbnail_1.jpg"
                       class="card-img-top"
-                      alt="smiling male profile"
+                      alt="..."
                     />
                     <div
                       class="card-img-overlay d-flex align-items-start justify-content-center"
                     >
                       <img
-                        src="./images/play.png"
+                        src="/images/play.png"
                         alt="play button"
                         width="100 px"
                       />
@@ -289,79 +292,7 @@
                         class="row d-flex justify-content-start align-items-center mb-2"
                       >
                         <img
-                          src="./images/profile_1.jpg"
-                          alt="profile male"
-                          width="30px"
-                          class="rounded-circle ml-3"
-                        />
-                        <a
-                          href="#"
-                          class="mb-0 pl-2 color-primary font-weight-bold"
-                          >Phillip Massey</a
-                        >
-                      </div>
-                      <div
-                        class="row d-flex justify-content-between align-items-center pl-3 pr-3"
-                      >
-                        <p class="mb-0">
-                          <img
-                            src="./images/star_on.png"
-                            alt="star on"
-                            width="20px"
-                          />
-                          <img
-                            src="./images/star_on.png"
-                            alt="star on"
-                            width="20px"
-                          />
-                          <img
-                            src="./images/star_on.png"
-                            alt="star on"
-                            width="20px"
-                          />
-                          <img
-                            src="./images/star_on.png"
-                            alt="star on"
-                            width="20px"
-                          />
-                          <img
-                            src="./images/star_off.png"
-                            alt="star off"
-                            width="20px"
-                          />
-                        </p>
-                        <p class="mb-0 color-primary">8 min</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col mb-4">
-                  <div class="card border-0">
-                    <img
-                      src="./images/thumbnail_2.jpg"
-                      class="card-img-top"
-                      alt="smiling male profile"
-                    />
-                    <div
-                      class="card-img-overlay d-flex align-items-start justify-content-center"
-                    >
-                      <img
-                        src="./images/play.png"
-                        alt="play button"
-                        width="100 px"
-                      />
-                    </div>
-                    <div class="card-body">
-                      <h5 class="card-title font-weight-bold">Sad Smile</h5>
-                      <p class="card-text">
-                        Lorem ipsum dolor sit amet consectetur, adipisicing
-                        elit.
-                      </p>
-                      <div
-                        class="row d-flex justify-content-start align-items-center mb-2"
-                      >
-                        <img
-                          src="./images/profile_1.jpg"
+                          src="/images/profile_1.jpg"
                           alt="profile"
                           width="30px"
                           class="rounded-circle ml-3"
@@ -377,27 +308,99 @@
                       >
                         <p class="mb-0">
                           <img
-                            src="./images/star_on.png"
+                            src="/images/star_on.png"
                             alt="star on"
                             width="20px"
                           />
                           <img
-                            src="./images/star_on.png"
+                            src="/images/star_on.png"
                             alt="star on"
                             width="20px"
                           />
                           <img
-                            src="./images/star_on.png"
+                            src="/images/star_on.png"
                             alt="star on"
                             width="20px"
                           />
                           <img
-                            src="./images/star_on.png"
+                            src="/images/star_on.png"
                             alt="star on"
                             width="20px"
                           />
                           <img
-                            src="./images/star_off.png"
+                            src="/images/star_off.png"
+                            alt="star off"
+                            width="20px"
+                          />
+                        </p>
+                        <p class="mb-0 color-primary">8 min</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col mb-4">
+                  <div class="card border-0">
+                    <img
+                      src="./images/thumbnail_2.jpg"
+                      class="card-img-top"
+                      alt="..."
+                    />
+                    <div
+                      class="card-img-overlay d-flex align-items-start justify-content-center"
+                    >
+                      <img
+                        src="/images/play.png"
+                        alt="play button"
+                        width="100 px"
+                      />
+                    </div>
+                    <div class="card-body">
+                      <h5 class="card-title font-weight-bold">Sad Smile</h5>
+                      <p class="card-text">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing
+                        elit.
+                      </p>
+                      <div
+                        class="row d-flex justify-content-start align-items-center mb-2"
+                      >
+                        <img
+                          src="/images/profile_1.jpg"
+                          alt="profile"
+                          width="30px"
+                          class="rounded-circle ml-3"
+                        />
+                        <a
+                          href="#"
+                          class="mb-0 pl-2 color-primary font-weight-bold"
+                          >Phillip Massey</a
+                        >
+                      </div>
+                      <div
+                        class="row d-flex justify-content-between align-items-center pl-3 pr-3"
+                      >
+                        <p class="mb-0">
+                          <img
+                            src="/images/star_on.png"
+                            alt="star on"
+                            width="20px"
+                          />
+                          <img
+                            src="/images/star_on.png"
+                            alt="star on"
+                            width="20px"
+                          />
+                          <img
+                            src="/images/star_on.png"
+                            alt="star on"
+                            width="20px"
+                          />
+                          <img
+                            src="/images/star_on.png"
+                            alt="star on"
+                            width="20px"
+                          />
+                          <img
+                            src="/images/star_off.png"
                             alt="star off"
                             width="20px"
                           />
@@ -412,13 +415,13 @@
                     <img
                       src="./images/thumbnail_3.jpg"
                       class="card-img-top"
-                      alt="smiling female profile"
+                      alt="..."
                     />
                     <div
                       class="card-img-overlay d-flex align-items-start justify-content-center"
                     >
                       <img
-                        src="./images/play.png"
+                        src="/images/play.png"
                         alt="play button"
                         width="100 px"
                       />
@@ -433,8 +436,8 @@
                         class="row d-flex justify-content-start align-items-center mb-2"
                       >
                         <img
-                          src="./images/profile_1.jpg"
-                          alt="profile male"
+                          src="/images/profile_1.jpg"
+                          alt="profile"
                           width="30px"
                           class="rounded-circle ml-3"
                         />
@@ -449,27 +452,27 @@
                       >
                         <p class="mb-0">
                           <img
-                            src="./images/star_on.png"
+                            src="/images/star_on.png"
                             alt="star on"
                             width="20px"
                           />
                           <img
-                            src="./images/star_on.png"
+                            src="/images/star_on.png"
                             alt="star on"
                             width="20px"
                           />
                           <img
-                            src="./images/star_on.png"
+                            src="/images/star_on.png"
                             alt="star on"
                             width="20px"
                           />
                           <img
-                            src="./images/star_on.png"
+                            src="/images/star_on.png"
                             alt="star on"
                             width="20px"
                           />
                           <img
-                            src="./images/star_off.png"
+                            src="/images/star_off.png"
                             alt="star off"
                             width="20px"
                           />
@@ -484,13 +487,13 @@
                     <img
                       src="./images/thumbnail_4.jpg"
                       class="card-img-top"
-                      alt="smilling female profile"
+                      alt="..."
                     />
                     <div
                       class="card-img-overlay d-flex align-items-start justify-content-center"
                     >
                       <img
-                        src="./images/play.png"
+                        src="/images/play.png"
                         alt="play button"
                         width="100 px"
                       />
@@ -505,8 +508,8 @@
                         class="row d-flex justify-content-start align-items-center mb-2"
                       >
                         <img
-                          src="./images/profile_1.jpg"
-                          alt="profile male"
+                          src="/images/profile_1.jpg"
+                          alt="profile"
                           width="30px"
                           class="rounded-circle ml-3"
                         />
@@ -521,27 +524,27 @@
                       >
                         <p class="mb-0">
                           <img
-                            src="./images/star_on.png"
+                            src="/images/star_on.png"
                             alt="star on"
                             width="20px"
                           />
                           <img
-                            src="./images/star_on.png"
+                            src="/images/star_on.png"
                             alt="star on"
                             width="20px"
                           />
                           <img
-                            src="./images/star_on.png"
+                            src="/images/star_on.png"
                             alt="star on"
                             width="20px"
                           />
                           <img
-                            src="./images/star_on.png"
+                            src="/images/star_on.png"
                             alt="star on"
                             width="20px"
                           />
                           <img
-                            src="./images/star_off.png"
+                            src="/images/star_off.png"
                             alt="star off"
                             width="20px"
                           />
@@ -562,13 +565,13 @@
                     <img
                       src="./images/thumbnail_1.jpg"
                       class="card-img-top"
-                      alt="smiling male profile"
+                      alt="..."
                     />
                     <div
                       class="card-img-overlay d-flex align-items-start justify-content-center"
                     >
                       <img
-                        src="./images/play.png"
+                        src="/images/play.png"
                         alt="play button"
                         width="100 px"
                       />
@@ -577,7 +580,7 @@
                       class="card-img-overlay d-flex align-items-start justify-content-center"
                     >
                       <img
-                        src="./images/play.png"
+                        src="/images/play.png"
                         alt="play button"
                         width="100 px"
                       />
@@ -594,8 +597,8 @@
                         class="row d-flex justify-content-start align-items-center mb-2"
                       >
                         <img
-                          src="./images/profile_1.jpg"
-                          alt="profile male"
+                          src="/images/profile_1.jpg"
+                          alt="profile"
                           width="30px"
                           class="rounded-circle ml-3"
                         />
@@ -610,27 +613,27 @@
                       >
                         <p class="mb-0">
                           <img
-                            src="./images/star_on.png"
+                            src="/images/star_on.png"
                             alt="star on"
                             width="20px"
                           />
                           <img
-                            src="./images/star_on.png"
+                            src="/images/star_on.png"
                             alt="star on"
                             width="20px"
                           />
                           <img
-                            src="./images/star_on.png"
+                            src="/images/star_on.png"
                             alt="star on"
                             width="20px"
                           />
                           <img
-                            src="./images/star_on.png"
+                            src="/images/star_on.png"
                             alt="star on"
                             width="20px"
                           />
                           <img
-                            src="./images/star_off.png"
+                            src="/images/star_off.png"
                             alt="star off"
                             width="20px"
                           />
@@ -645,13 +648,13 @@
                     <img
                       src="./images/thumbnail_2.jpg"
                       class="card-img-top"
-                      alt="smiling male profile"
+                      alt="..."
                     />
                     <div
                       class="card-img-overlay d-flex align-items-start justify-content-center"
                     >
                       <img
-                        src="./images/play.png"
+                        src="/images/play.png"
                         alt="play button"
                         width="100 px"
                       />
@@ -666,8 +669,8 @@
                         class="row d-flex justify-content-start align-items-center mb-2"
                       >
                         <img
-                          src="./images/profile_1.jpg"
-                          alt="profile male"
+                          src="/images/profile_1.jpg"
+                          alt="profile"
                           width="30px"
                           class="rounded-circle ml-3"
                         />
@@ -682,27 +685,27 @@
                       >
                         <p class="mb-0">
                           <img
-                            src="./images/star_on.png"
+                            src="/images/star_on.png"
                             alt="star on"
                             width="20px"
                           />
                           <img
-                            src="./images/star_on.png"
+                            src="/images/star_on.png"
                             alt="star on"
                             width="20px"
                           />
                           <img
-                            src="./images/star_on.png"
+                            src="/images/star_on.png"
                             alt="star on"
                             width="20px"
                           />
                           <img
-                            src="./images/star_on.png"
+                            src="/images/star_on.png"
                             alt="star on"
                             width="20px"
                           />
                           <img
-                            src="./images/star_off.png"
+                            src="/images/star_off.png"
                             alt="star off"
                             width="20px"
                           />
@@ -717,13 +720,13 @@
                     <img
                       src="./images/thumbnail_3.jpg"
                       class="card-img-top"
-                      alt="smiling female profile"
+                      alt="..."
                     />
                     <div
                       class="card-img-overlay d-flex align-items-start justify-content-center"
                     >
                       <img
-                        src="./images/play.png"
+                        src="/images/play.png"
                         alt="play button"
                         width="100 px"
                       />
@@ -738,8 +741,8 @@
                         class="row d-flex justify-content-start align-items-center mb-2"
                       >
                         <img
-                          src="./images/profile_1.jpg"
-                          alt="profile male"
+                          src="/images/profile_1.jpg"
+                          alt="profile"
                           width="30px"
                           class="rounded-circle ml-3"
                         />
@@ -754,27 +757,27 @@
                       >
                         <p class="mb-0">
                           <img
-                            src="./images/star_on.png"
+                            src="/images/star_on.png"
                             alt="star on"
                             width="20px"
                           />
                           <img
-                            src="./images/star_on.png"
+                            src="/images/star_on.png"
                             alt="star on"
                             width="20px"
                           />
                           <img
-                            src="./images/star_on.png"
+                            src="/images/star_on.png"
                             alt="star on"
                             width="20px"
                           />
                           <img
-                            src="./images/star_on.png"
+                            src="/images/star_on.png"
                             alt="star on"
                             width="20px"
                           />
                           <img
-                            src="./images/star_off.png"
+                            src="/images/star_off.png"
                             alt="star off"
                             width="20px"
                           />
@@ -789,13 +792,13 @@
                     <img
                       src="./images/thumbnail_4.jpg"
                       class="card-img-top"
-                      alt="smiling female profile"
+                      alt="..."
                     />
                     <div
                       class="card-img-overlay d-flex align-items-start justify-content-center"
                     >
                       <img
-                        src="./images/play.png"
+                        src="/images/play.png"
                         alt="play button"
                         width="100 px"
                       />
@@ -810,8 +813,8 @@
                         class="row d-flex justify-content-start align-items-center mb-2"
                       >
                         <img
-                          src="./images/profile_1.jpg"
-                          alt="profile male"
+                          src="/images/profile_1.jpg"
+                          alt="profile"
                           width="30px"
                           class="rounded-circle ml-3"
                         />
@@ -826,27 +829,27 @@
                       >
                         <p class="mb-0">
                           <img
-                            src="./images/star_on.png"
+                            src="/images/star_on.png"
                             alt="star on"
                             width="20px"
                           />
                           <img
-                            src="./images/star_on.png"
+                            src="/images/star_on.png"
                             alt="star on"
                             width="20px"
                           />
                           <img
-                            src="./images/star_on.png"
+                            src="/images/star_on.png"
                             alt="star on"
                             width="20px"
                           />
                           <img
-                            src="./images/star_on.png"
+                            src="/images/star_on.png"
                             alt="star on"
                             width="20px"
                           />
                           <img
-                            src="./images/star_off.png"
+                            src="/images/star_off.png"
                             alt="star off"
                             width="20px"
                           />
@@ -880,6 +883,7 @@
         </a>
       </div>
     </section>
+
     <!-- Membership -->
     <section class="member background-secondary text-light">
       <div class="container text-center">
@@ -964,17 +968,15 @@
     </section>
     <!-- Videos -->
     <section class="popular">
+      <div class="loader"></div>
       <div class="container text-center">
         <h2 class="mt-5 mb-5 font-weight-light">
-          <span class="color-primary font-weight-bold">Latests</span> videos
+          
+          <span class="color-primary font-weight-bold">Latest</span> videos
         </h2>
       </div>
-      <div
-        id="carouselControlVideo"
-        class="carousel slide"
-        data-ride="carousel"
-      >
-        <div class="carousel-inner">
+      <div id="carouselControls" class="carousel slide slidersL" data-ride="carousel">
+        <div id="latestContainer" class="carousel-inner">
           <div class="carousel-item active">
             <div class="container pt-5 pb-5">
               <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4">
@@ -983,13 +985,13 @@
                     <img
                       src="./images/thumbnail_1.jpg"
                       class="card-img-top"
-                      alt="smiling male profile"
+                      alt="..."
                     />
                     <div
                       class="card-img-overlay d-flex align-items-start justify-content-center"
                     >
                       <img
-                        src="./images/play.png"
+                        src="/images/play.png"
                         alt="play button"
                         width="100 px"
                       />
@@ -1006,8 +1008,8 @@
                         class="row d-flex justify-content-start align-items-center mb-2"
                       >
                         <img
-                          src="./images/profile_1.jpg"
-                          alt="profile male"
+                          src="/images/profile_1.jpg"
+                          alt="profile"
                           width="30px"
                           class="rounded-circle ml-3"
                         />
@@ -1022,27 +1024,27 @@
                       >
                         <p class="mb-0">
                           <img
-                            src="./images/star_on.png"
+                            src="/images/star_on.png"
                             alt="star on"
                             width="20px"
                           />
                           <img
-                            src="./images/star_on.png"
+                            src="/images/star_on.png"
                             alt="star on"
                             width="20px"
                           />
                           <img
-                            src="./images/star_on.png"
+                            src="/images/star_on.png"
                             alt="star on"
                             width="20px"
                           />
                           <img
-                            src="./images/star_on.png"
+                            src="/images/star_on.png"
                             alt="star on"
                             width="20px"
                           />
                           <img
-                            src="./images/star_off.png"
+                            src="/images/star_off.png"
                             alt="star off"
                             width="20px"
                           />
@@ -1057,13 +1059,13 @@
                     <img
                       src="./images/thumbnail_2.jpg"
                       class="card-img-top"
-                      alt="smiling male profile"
+                      alt="..."
                     />
                     <div
                       class="card-img-overlay d-flex align-items-start justify-content-center"
                     >
                       <img
-                        src="./images/play.png"
+                        src="/images/play.png"
                         alt="play button"
                         width="100 px"
                       />
@@ -1078,8 +1080,8 @@
                         class="row d-flex justify-content-start align-items-center mb-2"
                       >
                         <img
-                          src="./images/profile_1.jpg"
-                          alt="male profile"
+                          src="/images/profile_1.jpg"
+                          alt="profile"
                           width="30px"
                           class="rounded-circle ml-3"
                         />
@@ -1094,27 +1096,27 @@
                       >
                         <p class="mb-0">
                           <img
-                            src="./images/star_on.png"
+                            src="/images/star_on.png"
                             alt="star on"
                             width="20px"
                           />
                           <img
-                            src="./images/star_on.png"
+                            src="/images/star_on.png"
                             alt="star on"
                             width="20px"
                           />
                           <img
-                            src="./images/star_on.png"
+                            src="/images/star_on.png"
                             alt="star on"
                             width="20px"
                           />
                           <img
-                            src="./images/star_on.png"
+                            src="/images/star_on.png"
                             alt="star on"
                             width="20px"
                           />
                           <img
-                            src="./images/star_off.png"
+                            src="/images/star_off.png"
                             alt="star off"
                             width="20px"
                           />
@@ -1129,13 +1131,13 @@
                     <img
                       src="./images/thumbnail_3.jpg"
                       class="card-img-top"
-                      alt="smiling female profile"
+                      alt="..."
                     />
                     <div
                       class="card-img-overlay d-flex align-items-start justify-content-center"
                     >
                       <img
-                        src="./images/play.png"
+                        src="/images/play.png"
                         alt="play button"
                         width="100 px"
                       />
@@ -1150,8 +1152,8 @@
                         class="row d-flex justify-content-start align-items-center mb-2"
                       >
                         <img
-                          src="./images/profile_1.jpg"
-                          alt="male profile"
+                          src="/images/profile_1.jpg"
+                          alt="profile"
                           width="30px"
                           class="rounded-circle ml-3"
                         />
@@ -1166,27 +1168,27 @@
                       >
                         <p class="mb-0">
                           <img
-                            src="./images/star_on.png"
+                            src="/images/star_on.png"
                             alt="star on"
                             width="20px"
                           />
                           <img
-                            src="./images/star_on.png"
+                            src="/images/star_on.png"
                             alt="star on"
                             width="20px"
                           />
                           <img
-                            src="./images/star_on.png"
+                            src="/images/star_on.png"
                             alt="star on"
                             width="20px"
                           />
                           <img
-                            src="./images/star_on.png"
+                            src="/images/star_on.png"
                             alt="star on"
                             width="20px"
                           />
                           <img
-                            src="./images/star_off.png"
+                            src="/images/star_off.png"
                             alt="star off"
                             width="20px"
                           />
@@ -1201,13 +1203,13 @@
                     <img
                       src="./images/thumbnail_4.jpg"
                       class="card-img-top"
-                      alt="smiling female profile"
+                      alt="..."
                     />
                     <div
                       class="card-img-overlay d-flex align-items-start justify-content-center"
                     >
                       <img
-                        src="./images/play.png"
+                        src="/images/play.png"
                         alt="play button"
                         width="100 px"
                       />
@@ -1222,8 +1224,8 @@
                         class="row d-flex justify-content-start align-items-center mb-2"
                       >
                         <img
-                          src="./images/profile_1.jpg"
-                          alt="male profile"
+                          src="/images/profile_1.jpg"
+                          alt="profile"
                           width="30px"
                           class="rounded-circle ml-3"
                         />
@@ -1238,27 +1240,27 @@
                       >
                         <p class="mb-0">
                           <img
-                            src="./images/star_on.png"
+                            src="/images/star_on.png"
                             alt="star on"
                             width="20px"
                           />
                           <img
-                            src="./images/star_on.png"
+                            src="/images/star_on.png"
                             alt="star on"
                             width="20px"
                           />
                           <img
-                            src="./images/star_on.png"
+                            src="/images/star_on.png"
                             alt="star on"
                             width="20px"
                           />
                           <img
-                            src="./images/star_on.png"
+                            src="/images/star_on.png"
                             alt="star on"
                             width="20px"
                           />
                           <img
-                            src="./images/star_off.png"
+                            src="/images/star_off.png"
                             alt="star off"
                             width="20px"
                           />
@@ -1279,13 +1281,22 @@
                     <img
                       src="./images/thumbnail_1.jpg"
                       class="card-img-top"
-                      alt="smiling male profile"
+                      alt="..."
                     />
                     <div
                       class="card-img-overlay d-flex align-items-start justify-content-center"
                     >
                       <img
-                        src="./images/play.png"
+                        src="/images/play.png"
+                        alt="play button"
+                        width="100 px"
+                      />
+                    </div>
+                    <div
+                      class="card-img-overlay d-flex align-items-start justify-content-center"
+                    >
+                      <img
+                        src="/images/play.png"
                         alt="play button"
                         width="100 px"
                       />
@@ -1302,8 +1313,8 @@
                         class="row d-flex justify-content-start align-items-center mb-2"
                       >
                         <img
-                          src="./images/profile_1.jpg"
-                          alt="male profile"
+                          src="/images/profile_1.jpg"
+                          alt="profile"
                           width="30px"
                           class="rounded-circle ml-3"
                         />
@@ -1318,27 +1329,27 @@
                       >
                         <p class="mb-0">
                           <img
-                            src="./images/star_on.png"
+                            src="/images/star_on.png"
                             alt="star on"
                             width="20px"
                           />
                           <img
-                            src="./images/star_on.png"
+                            src="/images/star_on.png"
                             alt="star on"
                             width="20px"
                           />
                           <img
-                            src="./images/star_on.png"
+                            src="/images/star_on.png"
                             alt="star on"
                             width="20px"
                           />
                           <img
-                            src="./images/star_on.png"
+                            src="/images/star_on.png"
                             alt="star on"
                             width="20px"
                           />
                           <img
-                            src="./images/star_off.png"
+                            src="/images/star_off.png"
                             alt="star off"
                             width="20px"
                           />
@@ -1353,13 +1364,13 @@
                     <img
                       src="./images/thumbnail_2.jpg"
                       class="card-img-top"
-                      alt="smiling male profile"
+                      alt="..."
                     />
                     <div
                       class="card-img-overlay d-flex align-items-start justify-content-center"
                     >
                       <img
-                        src="./images/play.png"
+                        src="/images/play.png"
                         alt="play button"
                         width="100 px"
                       />
@@ -1374,8 +1385,8 @@
                         class="row d-flex justify-content-start align-items-center mb-2"
                       >
                         <img
-                          src="./images/profile_1.jpg"
-                          alt="male profile"
+                          src="/images/profile_1.jpg"
+                          alt="profile"
                           width="30px"
                           class="rounded-circle ml-3"
                         />
@@ -1390,27 +1401,27 @@
                       >
                         <p class="mb-0">
                           <img
-                            src="./images/star_on.png"
+                            src="/images/star_on.png"
                             alt="star on"
                             width="20px"
                           />
                           <img
-                            src="./images/star_on.png"
+                            src="/images/star_on.png"
                             alt="star on"
                             width="20px"
                           />
                           <img
-                            src="./images/star_on.png"
+                            src="/images/star_on.png"
                             alt="star on"
                             width="20px"
                           />
                           <img
-                            src="./images/star_on.png"
+                            src="/images/star_on.png"
                             alt="star on"
                             width="20px"
                           />
                           <img
-                            src="./images/star_off.png"
+                            src="/images/star_off.png"
                             alt="star off"
                             width="20px"
                           />
@@ -1425,13 +1436,13 @@
                     <img
                       src="./images/thumbnail_3.jpg"
                       class="card-img-top"
-                      alt="smiling female profile"
+                      alt="..."
                     />
                     <div
                       class="card-img-overlay d-flex align-items-start justify-content-center"
                     >
                       <img
-                        src="./images/play.png"
+                        src="/images/play.png"
                         alt="play button"
                         width="100 px"
                       />
@@ -1446,8 +1457,8 @@
                         class="row d-flex justify-content-start align-items-center mb-2"
                       >
                         <img
-                          src="./images/profile_1.jpg"
-                          alt="male profile"
+                          src="/images/profile_1.jpg"
+                          alt="profile"
                           width="30px"
                           class="rounded-circle ml-3"
                         />
@@ -1462,27 +1473,27 @@
                       >
                         <p class="mb-0">
                           <img
-                            src="./images/star_on.png"
+                            src="/images/star_on.png"
                             alt="star on"
                             width="20px"
                           />
                           <img
-                            src="./images/star_on.png"
+                            src="/images/star_on.png"
                             alt="star on"
                             width="20px"
                           />
                           <img
-                            src="./images/star_on.png"
+                            src="/images/star_on.png"
                             alt="star on"
                             width="20px"
                           />
                           <img
-                            src="./images/star_on.png"
+                            src="/images/star_on.png"
                             alt="star on"
                             width="20px"
                           />
                           <img
-                            src="./images/star_off.png"
+                            src="/images/star_off.png"
                             alt="star off"
                             width="20px"
                           />
@@ -1497,13 +1508,13 @@
                     <img
                       src="./images/thumbnail_4.jpg"
                       class="card-img-top"
-                      alt="smiling female profile"
+                      alt="..."
                     />
                     <div
                       class="card-img-overlay d-flex align-items-start justify-content-center"
                     >
                       <img
-                        src="./images/play.png"
+                        src="/images/play.png"
                         alt="play button"
                         width="100 px"
                       />
@@ -1518,8 +1529,8 @@
                         class="row d-flex justify-content-start align-items-center mb-2"
                       >
                         <img
-                          src="./images/profile_1.jpg"
-                          alt="male profile"
+                          src="/images/profile_1.jpg"
+                          alt="profile"
                           width="30px"
                           class="rounded-circle ml-3"
                         />
@@ -1534,27 +1545,27 @@
                       >
                         <p class="mb-0">
                           <img
-                            src="./images/star_on.png"
+                            src="/images/star_on.png"
                             alt="star on"
                             width="20px"
                           />
                           <img
-                            src="./images/star_on.png"
+                            src="/images/star_on.png"
                             alt="star on"
                             width="20px"
                           />
                           <img
-                            src="./images/star_on.png"
+                            src="/images/star_on.png"
                             alt="star on"
                             width="20px"
                           />
                           <img
-                            src="./images/star_on.png"
+                            src="/images/star_on.png"
                             alt="star on"
                             width="20px"
                           />
                           <img
-                            src="./images/star_off.png"
+                            src="/images/star_off.png"
                             alt="star off"
                             width="20px"
                           />
@@ -1570,7 +1581,7 @@
         </div>
         <a
           class="carousel-control-prev"
-          href="#carouselControlVideo"
+          href="#carouselControls"
           role="button"
           data-slide="prev"
         >
@@ -1579,7 +1590,7 @@
         </a>
         <a
           class="carousel-control-next"
-          href="#carouselControlVideo"
+          href="#carouselControls"
           role="button"
           data-slide="next"
         >
